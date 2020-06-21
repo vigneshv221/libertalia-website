@@ -1,25 +1,87 @@
 import React, { Component } from "react";
-import { Link, animatedScroll as scroll } from "react-scroll";
+import logo from "./lib-01.png";
+import { Link, animateScroll as scroll } from "react-scroll";
 
-class Navbar extends Component {
+export default class Navbar extends Component {
     scrollToTop = () => {
         scroll.scrollToTop();
     };
+
     render() {
         return (
-            <div className='topnav'>
-                <span className='Libertalia'>LIBERTALIA</span>
-                <div className='topnav-right'>
-                    <a className='active' href='#home'>
-                        Home
-                    </a>
-                    <a href='#contact'>Contact</a>
-                    <a href='#search'>Search</a>
-                    <a href='#about'>About</a>
+            <nav className='nav' id='navbar'>
+                <div className='nav-content'>
+                    <img
+                        src={logo}
+                        className='nav-logo'
+                        alt='Logo'
+                        onClick={this.scrollToTop}
+                    />
+                    <span className='Libertalia'>LIBERTALIA</span>
+                    <ul className='nav-items'>
+                        <li className='nav-item'>
+                            <Link
+                                activeClass='active'
+                                to='section1'
+                                spy={true}
+                                smooth={true}
+                                offset={-70}
+                                duration={500}
+                            >
+                                Home
+                            </Link>
+                        </li>
+                        <li className='nav-item'>
+                            <Link
+                                activeClass='active'
+                                to='section2'
+                                spy={true}
+                                smooth={true}
+                                offset={-70}
+                                duration={500}
+                            >
+                                The Problem
+                            </Link>
+                        </li>
+                        <li className='nav-item'>
+                            <Link
+                                activeClass='active'
+                                to='section3'
+                                spy={true}
+                                smooth={true}
+                                offset={-70}
+                                duration={500}
+                            >
+                                Our Solution
+                            </Link>
+                        </li>
+                        <li className='nav-item'>
+                            <Link
+                                activeClass='active'
+                                to='section4'
+                                spy={true}
+                                smooth={true}
+                                offset={-70}
+                                duration={500}
+                            >
+                                Services
+                            </Link>
+                        </li>
+                        <li className='nav-item'>
+                            <Link
+                                activeClass='active'
+                                to='section5'
+                                spy={true}
+                                smooth={true}
+                                offset={-70}
+                                duration={500}
+                            >
+                                Contact
+                            </Link>
+                        </li>
+                    </ul>
                 </div>
-            </div>
+            </nav>
         );
     }
 }
-
-export default Navbar;
