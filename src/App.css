@@ -64,9 +64,10 @@
 }
 
 .section-content {
+    display: flex;
     width: 80%;
     height: 100%;
-    margin: 0 auto;
+    margin: auto;
     padding: 40px;
     transition: ease-in 0.5s;
 }
@@ -77,11 +78,26 @@ footer {
 }
 
 .float-right {
-    display: block;
-    float: right;
+    flex: 1.5;
+    font-size: 2rem;
 }
 
 .float-left {
-    display: block;
-    float: left;
+    flex: 1;
+}
+.image {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+a {
+    display: inline;
+    margin-left: 2rem;
+    color: #cccccc;
+}
+
+a.active {
+    display: inline;
+    margin-left: 2rem;
+    color: #cccccc;
 }

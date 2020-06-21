@@ -22,16 +22,7 @@ export default class Navbar extends Component {
                     </span>
                     <ul className='nav-items'>
                         <li className='nav-item'>
-                            <Link
-                                activeClass='active'
-                                to='section1'
-                                spy={true}
-                                smooth={true}
-                                offset={-70}
-                                duration={500}
-                            >
-                                Home
-                            </Link>
+                            <a href='/'>Home</a>
                         </li>
                         <li className='nav-item'>
                             <Link
@@ -66,7 +57,7 @@ export default class Navbar extends Component {
                                 offset={-70}
                                 duration={500}
                             >
-                                Services
+                                Marketing Approach
                             </Link>
                         </li>
                         <li className='nav-item'>
@@ -78,7 +69,7 @@ export default class Navbar extends Component {
                                 offset={-70}
                                 duration={500}
                             >
-                                Contact
+                                Plans for Future
                             </Link>
                         </li>
                     </ul>
