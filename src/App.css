@@ -1,38 +1,37 @@
-.App {
-  text-align: center;
+@import url("https://fonts.googleapis.com/css?family=Poppins&display=swap");
+
+.topnav {
+    background-color: #000000;
+    overflow: hidden;
+    color: #fff;
+    font-family: Poppins;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.topnav a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.topnav a:hover {
+    background-color: #ccc;
+    color: black;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.topnav a.active {
+    background-color: #fff;
+    color: #000;
 }
 
-.App-link {
-  color: #61dafb;
+.topnav-right {
+    float: right;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.Libertalia {
+    font-size: 2rem;
+    font-family: Poppins;
+    padding: 1rem;
 }
