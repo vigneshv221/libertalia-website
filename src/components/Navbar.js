@@ -17,7 +17,9 @@ export default class Navbar extends Component {
                         alt='Logo'
                         onClick={this.scrollToTop}
                     />
-                    <span className='Libertalia'>LIBERTALIA</span>
+                    <span className='Libertalia' onClick={this.scrollToTop}>
+                        LIBERTALIA
+                    </span>
                     <ul className='nav-items'>
                         <li className='nav-item'>
                             <Link

@@ -56,11 +56,32 @@
     font-size: 2rem;
     float: left;
     position: absolute;
-    left: 0px;
+    left: 20px;
+}
+
+.Libertalia:hover {
+    cursor: pointer;
 }
 
 .section-content {
-    width: 60%;
+    width: 80%;
+    height: 100%;
     margin: 0 auto;
     padding: 40px;
+    transition: ease-in 0.5s;
+}
+
+footer {
+    height: 5%;
+    text-align: center;
+}
+
+.float-right {
+    display: block;
+    float: right;
+}
+
+.float-left {
+    display: block;
+    float: left;
 }
